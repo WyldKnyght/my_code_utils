@@ -18,9 +18,8 @@
 6. **Code Formatting:**  
    - PEP 8: Follow PEP 8 style guidelines for consistent code formatting.
    - Type hints: Use type hints for improved code readability and error detection.
-   - Importanize: Use Importanize for consistent import organization.
-      - If you receive a "No module named 'imp'" error, read [importanize document](./importanize.md) 
-
+   - isort: Use isort for consistent import organization.
+      
 7. **Code Organization:**  
    - Move code to the appropriate folder: 
      - **Configs:** settings, constants, etc.

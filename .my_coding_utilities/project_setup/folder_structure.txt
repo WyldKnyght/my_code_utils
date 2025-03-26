@@ -1,0 +1,28 @@
+my_code_utils
+├── .gitignore
+├── .my_coding_utilities
+│   ├── database
+│   │   └── create_db_from_schema
+│   │       ├── __init__.py
+│   │       └── create_db_from_schema.py
+│   ├── docs
+│   │   ├── coding_priciples.md
+│   │   ├── default_folder_structure.md
+│   │   ├── future_improvements.md
+│   │   ├── importanize.md
+│   │   ├── improvement_suggestions
+│   │   │   ├── 1_initial_suggestions.md
+│   │   │   ├── 2_secondary_suggestions.md
+│   │   │   └── organizing_coding_utilities.md
+│   │   └── system_setup.md
+│   └── project_setup
+│       ├── extract_folder_structure.py
+│       └── folder_structure.txt
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── docs
+├── requirements.txt
+└── src
+
+Script last modified: 2025-03-26 17:21:02

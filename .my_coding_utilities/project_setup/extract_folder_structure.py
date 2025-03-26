@@ -5,18 +5,18 @@ import os
 from treelib import Tree
 
 
-def generate_folder_structure(root_dir, output_file=None, excluded_dirs=None):
+def generate_folder_structure(root_dir, output_file=None, excluded_directories=None):
     tree = Tree()
     tree.create_node(os.path.basename(root_dir), root_dir)  # Create the root node
 
     # Convert excluded_dirs to a set (if it's not already)
-    excluded_dirs = set(excluded_dirs) if excluded_dirs else set()
+    excluded_dir_set = set(excluded_directories) if excluded_directories else set()
 
     def add_to_tree(directory, parent):
         for item in os.listdir(directory):
             item_path = os.path.join(directory, item)
             if os.path.isdir(item_path):
-                if item in excluded_dirs:
+                if item in excluded_dir_set:
                     continue
                 node = tree.create_node(item, item_path, parent=parent)
                 add_to_tree(item_path, node)
@@ -37,7 +37,6 @@ def generate_folder_structure(root_dir, output_file=None, excluded_dirs=None):
     if output_file:
         with open(output_file, "a", encoding="utf-8") as file:
             file.write(f"\nScript last modified: {timestamp}")
-
 if __name__ == "__main__":
     project_root = "m:\\dev_env\\my_code_utils"
     admin_dir = os.path.join(project_root, ".my_coding_utilities")
@@ -59,4 +58,4 @@ if __name__ == "__main__":
     }
 
     print(f"Project Folder Structure for: {project_root}")
-    generate_folder_structure(project_root, output_file=output_filename, excluded_dirs=excluded_dirs)
+    generate_folder_structure(project_root, output_file=output_filename, excluded_directories=excluded_dirs)

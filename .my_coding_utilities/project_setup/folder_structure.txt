@@ -9,7 +9,6 @@ my_code_utils
 │   │   ├── coding_priciples.md
 │   │   ├── default_folder_structure.md
 │   │   ├── future_improvements.md
-│   │   ├── importanize.md
 │   │   ├── improvement_suggestions
 │   │   │   ├── 1_initial_suggestions.md
 │   │   │   ├── 2_secondary_suggestions.md
@@ -25,4 +24,4 @@ my_code_utils
 ├── requirements.txt
 └── src
 
-Script last modified: 2025-03-26 17:21:02
+Script last modified: 2025-03-26 17:52:59
